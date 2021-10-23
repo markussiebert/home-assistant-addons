@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "697c80fbcc882e6e20fab414f65269a3737586a8",
+  "version": "5423e2d80b20b81dad186a86871f0f71be3b9e37",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
@@ -13,7 +13,8 @@
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
-    "device": "device(subsystem=tty)"
+    "device": "device(subsystem=tty)",
+    "cfg": "str"
   },
   "ports": {
     "8088/tcp": 10080
