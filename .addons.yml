@@ -1,0 +1,6 @@
+channel: stable
+addons:
+  adguard:
+    repository: markussiebert/homeassistant-addon-vzlogger
+    target: vzlogger
+    image: ghcr.io/markussiebert/homeassistant-addon-vzlogger/{arch}:main
