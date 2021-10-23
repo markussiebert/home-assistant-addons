@@ -6,7 +6,13 @@
   "arch": ["armhf", "armv7", "amd64"],
   "startup": "application",
   "boot": "auto",
+  "kernel_modules": true,
   "usb": true,
+  "udev": true,
+  "gpio": true,
+  "apparmor": false,
+  "privileged": ["SYS_RAWIO"],
+  "devices": ["/dev/mem"],
   "options": {
     "cfg": null,
     "device": null
