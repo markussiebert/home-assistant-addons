@@ -14,7 +14,7 @@
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
   "options": {
-    "vzlogger": {}
+    "vzlogger": null
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
