@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "5791b707411450f7521fca29fabe55304642c04a",
+  "version": "1",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
@@ -14,7 +14,6 @@
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
   "options": {},
-  "schema": false,
   "ports": {
     "8088/tcp": 10080
   },
