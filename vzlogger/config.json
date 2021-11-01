@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "b81fed8852f5e4af05b3984a272982b4b1e07c29",
+  "version": "main",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
@@ -31,7 +31,8 @@
         "interval": -1,
         "aggtime": -1,
         "aggfixedinterval": false,
-        "protocol": "d0"
+        "protocol": "d0",
+        "device": null
       }
     ]
   },
@@ -53,7 +54,8 @@
         "interval": "int",
         "aggtime": "int",
         "aggfixedinterval": "bool",
-        "protocol": "str"
+        "protocol": "str",
+        "device": "device(subsystem=tty)"
       }
     ]
   },
