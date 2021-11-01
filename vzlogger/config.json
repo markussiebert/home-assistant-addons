@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "3b80468c13f03631a5d604322372eaec24108b20",
+  "version": "5791b707411450f7521fca29fabe55304642c04a",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
@@ -13,29 +13,8 @@
   "apparmor": false,
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
-  "options": {
-    "retry": 0,
-    "verbosity": 0,
-    "log": "",
-    "local_enabled": false,
-    "local_port": 8081,
-    "local_index": false,
-    "local_timeout": 0,
-    "local_buffer": 0
-    
-  },
-  "schema": {
-    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
-    "device": "device(subsystem=tty)",
-    "retry": "int",
-    "verbosity": "int",
-    "log": "str",
-    "local_enabled": "bool",
-    "local_port": "int",
-    "local_index": "bool",
-    "local_timeout": "int",
-    "local_buffer": "int"
-  },
+  "options": {},
+  "schema": false,
   "ports": {
     "8088/tcp": 10080
   },
