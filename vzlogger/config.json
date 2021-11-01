@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "main",
+  "version": "5791b707411450f7521fca29fabe55304642c04a",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
@@ -32,7 +32,7 @@
         "aggtime": -1,
         "aggfixedinterval": false,
         "channels": [],
-        "protocol": "invalid"
+        "protocol": "d0"
       }
     ]
   },
@@ -54,7 +54,21 @@
         "interval": "int",
         "aggtime": "int",
         "aggfixedinterval": "bool",
-        "channels": [],
+        "channels": [
+          {
+            "uuid": "str?",
+            "identifier": "str?",
+            "api": "str?",
+            "middleware": "str?",
+            "host": "str?",
+            "secretKey": "str?",
+            "type": "str?",
+            "scaler": "int?",
+            "timeout" : "int?",
+            "aggmode": "int?",
+            "duplicates": "int?"
+          }
+        ],
         "protocol": "str"
       }
     ]
