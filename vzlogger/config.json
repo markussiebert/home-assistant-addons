@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "main",
+  "version": "d713682d31ccea78c849b8e1682b6005e3a9424f",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
@@ -31,7 +31,7 @@
         "interval": -1,
         "aggtime": -1,
         "aggfixedinterval": false,
-        "protocol": "d0",
+        "protocol": "sml",
         "device": null
       }
     ]
@@ -55,8 +55,22 @@
         "aggtime": "int",
         "aggfixedinterval": "bool",
         "protocol": "str",
+        "pullseq": "str?",
+        "baudrate": "int?",
+        "parity": "str?",
+        "read_timeout": "int?",
         "device": "device(subsystem=tty)"
       }
+
+      "enabled": true,
+      "allowskip": false,
+      "protocol": "sml",
+      "pullseq": "2F3F210D0A",
+      "device": "/dev/ttyAMA0",
+      "baudrate": 9600,
+      "parity": "8n1",
+      "use_local_time": true,
+      "read_timeout": 60,
     ]
   },
   "ports": {
