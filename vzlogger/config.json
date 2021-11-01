@@ -14,12 +14,16 @@
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
   "options": {
-    "vzlogger": null
+    "retry": 0,
+    "verbosity": 0,
+    "log": ""
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "device": "device(subsystem=tty)",
-    "vzlogger": false
+    "retry": "int",
+    "verbosity": "int",
+    "log": "str"
   },
   "ports": {
     "8088/tcp": 10080
