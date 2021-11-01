@@ -19,7 +19,7 @@
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "device": "device(subsystem=tty)",
-    "vzlogger": false,
+    "vzlogger": false
   },
   "ports": {
     "8088/tcp": 10080
