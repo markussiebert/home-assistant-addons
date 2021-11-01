@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "1",
+  "version": "main",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
@@ -13,7 +13,52 @@
   "apparmor": false,
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
-  "options": {},
+  "options": {
+    "retry": 0,
+    "verbosity": 1,
+    "log": "",
+    "local": {
+      "enabled": true,
+      "port": 8080,
+      "index": true,
+      "timeout": 0,
+      "buffer": 0
+    },
+    "meters": [
+      {
+        "enabled": false,
+        "allowskip": false,
+        "interval": -1,
+        "aggtime": -1,
+        "aggfixedinterval": false,
+        "channels": [],
+        "protocol": "invalid"
+      }
+    ]
+  },
+  "schema": {
+    "retry": "int",
+    "verbosity": "int",
+    "log": "str",
+    "local": {
+      "enabled": "bool",
+      "port": "int",
+      "index": "bool",
+      "timeout": "int",
+      "buffer": "int"
+    },
+    "meters": [
+      {
+        "enabled": "bool",
+        "allowskip": "bool",
+        "interval": "int",
+        "aggtime": "int",
+        "aggfixedinterval": "bool",
+        "channels": [],
+        "protocol": "str"
+      }
+    ]
+  }
   "ports": {
     "8088/tcp": 10080
   },
