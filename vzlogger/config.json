@@ -61,16 +61,6 @@
         "read_timeout": "int?",
         "device": "device(subsystem=tty)"
       }
-
-      "enabled": true,
-      "allowskip": false,
-      "protocol": "sml",
-      "pullseq": "2F3F210D0A",
-      "device": "/dev/ttyAMA0",
-      "baudrate": 9600,
-      "parity": "8n1",
-      "use_local_time": true,
-      "read_timeout": 60,
     ]
   },
   "ports": {
