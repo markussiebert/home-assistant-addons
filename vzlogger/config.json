@@ -31,7 +31,6 @@
         "interval": -1,
         "aggtime": -1,
         "aggfixedinterval": false,
-        "channels": [],
         "protocol": "d0"
       }
     ]
@@ -54,21 +53,6 @@
         "interval": "int",
         "aggtime": "int",
         "aggfixedinterval": "bool",
-        "channels": [
-          {
-            "uuid": "str?",
-            "identifier": "str?",
-            "api": "str?",
-            "middleware": "str?",
-            "host": "str?",
-            "secretKey": "str?",
-            "type": "str?",
-            "scaler": "int?",
-            "timeout" : "int?",
-            "aggmode": "int?",
-            "duplicates": "int?"
-          }
-        ],
         "protocol": "str"
       }
     ]
