@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "aff7cc7cb80521d65ec58ab6c82d442d614fb4ea",
+  "version": "main",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
@@ -59,7 +59,14 @@
         "baudrate": "int?",
         "parity": "str?",
         "read_timeout": "int?",
-        "device": "device(subsystem=tty)"
+        "device": "device(subsystem=tty)",
+        "channels": [
+          {
+            "uuid": "str",
+            "middleware" : "str?",
+            "identifier" : "str?"
+          }
+        ]
       }
     ]
   },
