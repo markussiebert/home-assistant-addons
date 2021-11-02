@@ -1,9 +1,10 @@
 {
   "name": "vzLogger",
-  "version": "main",
+  "version": "2569b6e74e6928b16a66bdf965a9828bde719ff9",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
+  "map": ["share"],
   "startup": "application",
   "boot": "auto",
   "kernel_modules": true,
@@ -14,61 +15,10 @@
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
   "options": {
-    "retry": 0,
-    "verbosity": 1,
-    "log": "",
-    "local": {
-      "enabled": true,
-      "port": 8080,
-      "index": true,
-      "timeout": 0,
-      "buffer": 0
-    },
-    "meters": [
-      {
-        "enabled": false,
-        "allowskip": false,
-        "interval": -1,
-        "aggtime": -1,
-        "aggfixedinterval": false,
-        "protocol": "sml",
-        "device": null
-      }
-    ]
+    "configfile": "/share/vzlogger.conf"
   },
   "schema": {
-    "retry": "int",
-    "verbosity": "int",
-    "log": "str",
-    "local": {
-      "enabled": "bool",
-      "port": "int",
-      "index": "bool",
-      "timeout": "int",
-      "buffer": "int"
-    },
-    "meters": [
-      {
-        "enabled": "bool",
-        "allowskip": "bool",
-        "interval": "int",
-        "aggtime": "int",
-        "aggfixedinterval": "bool",
-        "protocol": "str",
-        "pullseq": "str?",
-        "baudrate": "int?",
-        "parity": "str?",
-        "read_timeout": "int?",
-        "device": "device(subsystem=tty)",
-        "channels": [
-          {
-            "uuid": "str",
-            "middleware" : "str?",
-            "identifier" : "str?"
-          }
-        ]
-      }
-    ]
+    "configfile": "str"
   },
   "ports": {
     "8088/tcp": 10080
