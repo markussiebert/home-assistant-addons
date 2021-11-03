@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "main",
+  "version": "a146c41b5a7bcd978c38b9740701b2c79e3c33fa",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
