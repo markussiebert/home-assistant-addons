@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "d36717d89f3e3c321671a77b4a986c08148f5509",
+  "version": "main",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
@@ -15,9 +15,11 @@
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
   "options": {
-    "configfile": "/share/vzlogger.conf"
+    "configfile": "/share/vzlogger.conf",
+    "device": null
   },
   "schema": {
+    "device": "device(subsystem=tty)",
     "configfile": "str"
   },
   "ports": {
