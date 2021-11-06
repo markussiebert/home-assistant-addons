@@ -2,6 +2,7 @@
   "name": "vzLogger",
   "version": "0.0.1",
   "slug": "vzLogger",
+  "url": "https://github.com/markussiebert/homeassistant-addon-vzlogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
   "map": ["share"],
