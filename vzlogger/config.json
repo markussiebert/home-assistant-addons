@@ -1,12 +1,15 @@
 {
   "name": "vzLogger",
-  "version": "a146c41b5a7bcd978c38b9740701b2c79e3c33fa",
+  "version": "v0.0.1",
   "slug": "vzLogger",
   "description": "vzlogger for homeassistant",
   "arch": ["armhf", "armv7", "amd64"],
   "map": ["share"],
-  "startup": "application",
+  "startup": "services",
+  "panel_icon": "mdi:zigbee",
   "boot": "auto",
+  "init": false,
+  "ingress": false,
   "kernel_modules": true,
   "usb": true,
   "udev": true,
@@ -22,11 +25,8 @@
     "device": "device(subsystem=tty)",
     "configfile": "str"
   },
-  "ports": {
-    "8088/tcp": 10080
-  },
   "ports_description": {
-    "8080/tcp": "vzlogger server"
+    "8081/tcp": "vzlogger http server for pulling data (Not required, Not secure)"
   },
   "image": "ghcr.io/markussiebert/homeassistant-addon-vzlogger/{arch}"
 }
