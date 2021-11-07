@@ -3,11 +3,10 @@
   "version": "edge",
   "slug": "vzLogger",
   "url": "https://github.com/markussiebert/homeassistant-addon-vzlogger",
-  "description": "vzlogger for homeassistant",
+  "description": "A tool to read and log measurements of a wide variety of smartmeters and sensors. The values can be published on an integrated http server, or pushed to vzlogger middleware, MQTT, and others.",
   "arch": ["armhf", "armv7", "amd64"],
   "map": ["share"],
   "startup": "services",
-  "panel_icon": "mdi:zigbee",
   "boot": "auto",
   "init": false,
   "ingress": false,
@@ -20,14 +19,12 @@
   "devices": ["/dev/mem"],
   "options": {
     "configfile": "/share/vzlogger.conf",
-    "device": null
   },
   "schema": {
-    "device": "device(subsystem=tty)",
     "configfile": "str"
   },
   "ports_description": {
-    "8081/tcp": "vzlogger http server for pulling data (Not required, Not secure)"
+    "8081/tcp": "vzlogger http server default port for pulling data (Not required, Not secure)"
   },
   "image": "ghcr.io/markussiebert/homeassistant-addon-vzlogger/{arch}"
 }
