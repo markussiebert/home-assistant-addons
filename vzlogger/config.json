@@ -1,6 +1,6 @@
 {
   "name": "vzLogger",
-  "version": "edge",
+  "version": "0.0.1",
   "slug": "vzLogger",
   "url": "https://github.com/markussiebert/homeassistant-addon-vzlogger",
   "description": "A tool to read and log measurements of a wide variety of smartmeters and sensors.",
