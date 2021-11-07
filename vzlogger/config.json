@@ -18,7 +18,7 @@
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
   "options": {
-    "configfile": "/share/vzlogger.conf",
+    "configfile": "/share/vzlogger.conf"
   },
   "schema": {
     "configfile": "str"
