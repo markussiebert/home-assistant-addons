@@ -1,7 +1,5 @@
 # Home Assistant Community Add-on: vzlogger
 
-## Installation
-
 ## Configuration
 
 **Note**: _Remember to restart the add-on when the configuration is changed._
