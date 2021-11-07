@@ -3,7 +3,7 @@
   "version": "edge",
   "slug": "vzLogger",
   "url": "https://github.com/markussiebert/homeassistant-addon-vzlogger",
-  "description": "A tool to read and log measurements of a wide variety of smartmeters and sensors. The values can be published on an integrated http server, or pushed to vzlogger middleware, MQTT, and others.",
+  "description": "A tool to read and log measurements of a wide variety of smartmeters and sensors.",
   "arch": ["armhf", "armv7", "amd64"],
   "map": ["share"],
   "startup": "services",
