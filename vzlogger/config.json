@@ -18,6 +18,7 @@
   "udev": true,
   "gpio": true,
   "apparmor": false,
+  "uart": true,
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
   "options": {
