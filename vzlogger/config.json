@@ -5,7 +5,10 @@
   "url": "https://github.com/markussiebert/homeassistant-addon-vzlogger",
   "description": "A tool to read and log measurements of a wide variety of smartmeters and sensors.",
   "arch": ["armhf", "armv7", "amd64"],
-  "map": ["share"],
+  "map": [
+    "share",
+    "config"
+  ],
   "startup": "services",
   "boot": "auto",
   "init": false,
@@ -15,6 +18,7 @@
   "udev": true,
   "gpio": true,
   "apparmor": false,
+  "uart": true,
   "privileged": ["SYS_RAWIO"],
   "devices": ["/dev/mem"],
   "options": {
